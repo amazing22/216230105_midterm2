@@ -18,6 +18,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:background="@drawable/button2"
+        android:layout_marginBottom="5dp"
         android:onClick="goToScene4"
         android:text="next" />
 </RelativeLayout>
