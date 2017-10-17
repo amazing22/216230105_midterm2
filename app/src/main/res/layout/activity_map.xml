@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffdfdf"
+    tools:context="com.example.user.midtem_ver2.Map">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:paddingBottom="11dp"
+            android:text="Adress"
+            android:textAlignment="center"
+            android:textSize="42dp" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="368dp"
+            android:layout_alignParentEnd="true"
+            android:maxHeight="300dp"
+            android:maxWidth="500dp"
+            app:srcCompat="@drawable/map"
+            android:layout_weight="0.06" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="0.43"
+            android:gravity="bottom"
+            android:layout_marginTop="5dp"
+            android:text="서울시 강남구 도곡동 도곡렉슬아파트\n211동 1703호"
+            android:textAlignment="center"
+            android:textSize="17dp" />
+    </LinearLayout>
+</RelativeLayout>
+

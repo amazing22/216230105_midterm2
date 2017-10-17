@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.user.midtem_ver2">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".FullscreenActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/FullscreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".introduce" />
+        <activity
+            android:name=".PersonListActivity"
+            android:label="@string/title_person_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PersonDetailActivity"
+            android:label="@string/title_person_detail"
+            android:parentActivityName=".PersonListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.user.midtem_ver2.PersonListActivity" />
+        </activity>
+        <activity android:name=".Personality" />
+        <activity android:name=".WhoamI" />
+        <activity android:name=".Main2Activity" />
+        <activity android:name=".Map" />
+        <activity android:name=".Main3Activity" />
+        <activity
+            android:name=".Main4Activity"
+            android:label="@string/title_activity_main4"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Main5Activity" />
+        <activity android:name=".Main6Activity" />
+        <activity android:name=".Activity_Scene"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffdfdf"
+    tools:context="com.example.user.midtem_ver2.WhoamI">
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="7dp"
+        android:text="Who Am I?"
+        android:textSize="58dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:layout_width="406dp"
+        android:layout_height="481dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="이름"
+            android:textSize="16dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp"
+            android:layout_marginTop="72dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/textView15" />
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView14"
+            android:layout_alignBottom="@+id/textView14"
+            android:layout_alignStart="@+id/textView28"
+            android:text="엄혜진" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:text="나이"
+            android:textSize="16dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="47dp"
+            android:layout_below="@+id/textView14"
+            android:layout_alignStart="@+id/textView19" />
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView15"
+            android:layout_alignBottom="@+id/textView15"
+            android:layout_alignEnd="@+id/textView32"
+            android:text="22살" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="학교"
+            android:textSize="16dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="80dp"
+            android:layout_below="@+id/textView15"
+            android:layout_alignStart="@+id/textView20" />
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView19"
+            android:layout_alignBottom="@+id/textView19"
+            android:layout_alignStart="@+id/textView30"
+            android:text="한양여자대학교" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="학과 "
+            android:textSize="16dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="110dp"
+            android:layout_marginTop="11dp"
+            android:layout_below="@+id/textView19"
+            android:layout_alignStart="@+id/textView21" />
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView20"
+            android:layout_alignBottom="@+id/textView20"
+            android:layout_alignStart="@+id/textView31"
+            android:text="정보경영과" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:text="학번"
+            android:textSize="16dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="144dp"
+            android:layout_below="@+id/textView20"
+            android:layout_alignStart="@+id/textView22" />
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView21"
+            android:layout_alignBottom="@+id/textView21"
+            android:layout_alignStart="@+id/textView32"
+            android:text="216230105" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="추가정보"
+            android:textSize="17dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="176dp"
+            android:layout_centerVertical="true"
+            android:layout_alignStart="@+id/textView23" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:text="혈핵형"
+            android:textSize="16dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="208dp"
+            android:layout_below="@+id/textView22"
+            android:layout_alignStart="@+id/textView24" />
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView23"
+            android:layout_alignBottom="@+id/textView23"
+            android:layout_alignStart="@+id/textView33"
+            android:text="AB형" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:text="메일주소"
+            android:textSize="16dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="235dp"
+            android:layout_below="@+id/textView23"
+            android:layout_alignStart="@+id/textView25" />
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView25"
+            android:layout_centerHorizontal="true"
+            android:text="djagpwls20@gmail.com" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="12dp"
+            android:text="깃허브주소"
+            android:textSize="16dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="269dp"
+            android:layout_below="@+id/textView24"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView25"
+            android:layout_alignBottom="@+id/textView25"
+            android:layout_alignStart="@+id/textView33"
+            android:text="github.com/amazing22" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Introduce Myself"
+            android:textSize="30dp"
+            android:layout_marginBottom="18dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/textView25" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/question"
+            android:layout_marginStart="20dp"
+            android:layout_alignTop="@+id/textView27"
+            android:layout_toEndOf="@+id/textView29" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

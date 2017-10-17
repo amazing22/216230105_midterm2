@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--참조하게될 항목들을 만드는 곳(스피너가 참조할 배열과 리스트뷰가 참조할 배열을 만들어줌)-->
+    <string-array name="spinner_test">
+        <item>서울</item>
+        <item>인천</item>
+        <item>경기도</item>
+        <item>강원도</item>
+    </string-array>
+
+</resources>
