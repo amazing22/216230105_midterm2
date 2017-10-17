@@ -11,6 +11,7 @@
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textAlignment="center"
         android:text="어떠셨나요~? "
         android:textSize="58dp"
         app:layout_constraintLeft_toLeftOf="parent"

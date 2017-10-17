@@ -1,5 +1,7 @@
 package com.example.user.midtem_ver2;
 
+import android.content.Intent;
+import android.provider.ContactsContract;
 import android.support.design.widget.TabLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -17,6 +19,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
+import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class Main4Activity extends AppCompatActivity {
@@ -36,10 +41,13 @@ public class Main4Activity extends AppCompatActivity {
      */
     private ViewPager mViewPager;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main4);
+
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -54,14 +62,6 @@ public class Main4Activity extends AppCompatActivity {
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(mViewPager);
 
-//        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-//        fab.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-//                        .setAction("Action", null).show();
-//            }
-//        });
 
     }
 
@@ -92,6 +92,7 @@ public class Main4Activity extends AppCompatActivity {
      * A placeholder fragment containing a simple view.
      */
     public static class PlaceholderFragment extends Fragment {
+        private ImageButton btn5, btn6, btn7, btn8;
         /**
          * The fragment argument representing the section number for this
          * fragment.
@@ -116,6 +117,7 @@ public class Main4Activity extends AppCompatActivity {
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
+
            if(getArguments().getInt(ARG_SECTION_NUMBER) == 1)
            {
                 View rootView = inflater.inflate(R.layout.fragment_sub_page01, container, false);
@@ -128,9 +130,40 @@ public class Main4Activity extends AppCompatActivity {
             }
             else
            {
-               View rootView = inflater.inflate(R.layout.fragment_main4, container, false);
-//               TextView textView = (TextView) rootView.findViewById(R.id.section_label);
-//               textView.setText(getString(R.string.section_format, getArguments().getInt(ARG_SECTION_NUMBER)));
+               View rootView = inflater.inflate(R.layout.fragment_main5, container, false);
+                btn5 =(ImageButton) rootView.findViewById(R.id.img1);
+                btn6 =(ImageButton) rootView.findViewById(R.id.img2);
+                btn7 =(ImageButton) rootView.findViewById(R.id.img3);
+                btn8 =(ImageButton) rootView.findViewById(R.id.img4);
+
+                btn5.setOnClickListener(new View.OnClickListener(){
+                    public void onClick(View view){
+                        Intent i = new Intent(getActivity(), Main7Activity.class);
+                        startActivity(i);
+                    }
+                });
+
+               btn6.setOnClickListener(new View.OnClickListener(){
+                   public void onClick(View view){
+                       Intent i = new Intent(getActivity(), Main8Activity.class);
+                       startActivity(i);
+                   }
+               });
+
+               btn7.setOnClickListener(new View.OnClickListener(){
+                   public void onClick(View view){
+                       Intent i = new Intent(getActivity(), Main9Activity.class);
+                       startActivity(i);
+                   }
+               });
+
+               btn8.setOnClickListener(new View.OnClickListener(){
+                   public void onClick(View view){
+                       Intent i = new Intent(getActivity(), Main10Activity.class);
+                       startActivity(i);
+                   }
+               });
+
                return rootView;
            }
         }

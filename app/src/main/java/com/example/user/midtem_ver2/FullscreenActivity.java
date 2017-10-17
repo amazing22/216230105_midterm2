@@ -111,7 +111,6 @@ public class FullscreenActivity extends AppCompatActivity {
     public void NextScene(View v){
         Intent i = new Intent(this, MainActivity.class);  // 이것이 인텐트, 메시지 객체이다.
         startActivity(i);
-
     }
 
     @Override
