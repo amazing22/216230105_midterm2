@@ -1,0 +1,317 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TabHost
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFDFDF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+
+                <LinearLayout
+                    android:id="@+id/tab4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#fff4a9"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="메인 스레드에서 받은 데이터 : "
+                                android:textSize="18dp" />
+
+                            <EditText
+                                android:id="@+id/editText"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Hello"
+                                android:textSize="18dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textView2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="스레드 #1 에서 받은 데이터 : "
+                                android:textSize="18dp" />
+
+                            <EditText
+                                android:id="@+id/editText2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textSize="18dp" />
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/processButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:text="시작하기"
+                            android:textSize="18dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#e3a2fff6"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/myTextView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="100dp"
+                        android:background="@drawable/button2"
+                        android:text="시간이 바뀌어요! 잘 봐주세요~"
+                        android:textSize="20dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.505"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.335" />
+
+                    <Button
+                        android:id="@+id/button19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="108dp"
+                        android:background="@drawable/button2"
+                        android:onClick="buttonClick"
+                        android:text="눌러주세요!"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/tab3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#cbffb5"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/txtURL"
+                            android:layout_width="252dp"
+                            android:layout_height="wrap_content"
+                            android:text="http://www.naver.com" />
+
+                        <Button
+                            android:id="@+id/btnGo"
+                            android:layout_width="73dp"
+                            android:layout_height="32dp"
+                            android:background="@drawable/button2"
+                            android:onClick="goURL"
+                            android:text="이동" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.83"
+                        android:layout_marginTop="400dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvElapsedTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="소요시간 :"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <TextView
+                            android:id="@+id/tvSec"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="sec"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+                    </LinearLayout>
+
+                    <WebView
+                        android:id="@+id/webView"
+                        android:layout_width="match_parent"
+                        android:layout_height="350dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_weight="0.83">
+
+                    </WebView>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#abaaff"
+                    android:orientation="vertical">
+
+
+                    <Button
+                        android:id="@+id/findButton"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="23dp"
+                        android:layout_marginTop="400dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button2"
+                        android:onClick="lookupProduct"
+                        android:text="검색"
+                        android:textAllCaps="false" />
+
+                    <Button
+                        android:id="@+id/addButton2"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="400dp"
+                        android:layout_marginStart="23dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button2"
+                        android:onClick="newProduct"
+                        android:text="추가하기"
+                        android:textAllCaps="false" />
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="43dp"
+                        android:layout_marginTop="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/button2"
+                        android:text="도서 목록 추가/검색"
+                        android:textSize="25dp" />
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="20dp"
+                            android:paddingTop="120dp">
+
+                            <TextView
+                                android:id="@+id/textView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="도서번호"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/productID"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="비어있습니다."
+                                android:textAlignment="center"
+                                android:textSize="18sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="20dp">
+
+                            <TextView
+                                android:id="@+id/textView3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="도서이름"
+                                android:textSize="18sp" />
+
+                            <EditText
+                                android:id="@+id/productName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:inputType="none"
+                                android:textAlignment="center"
+                                android:textSize="18sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="20dp">
+
+                            <TextView
+                                android:id="@+id/textView4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="도서 수"
+                                android:textSize="18sp" />
+
+                            <EditText
+                                android:id="@+id/productQuantity"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:inputType="numberDecimal"
+                                android:textAlignment="center"
+                                android:textSize="18sp" />
+                        </TableRow>
+
+                    </TableLayout>
+                </RelativeLayout>
+
+            </FrameLayout>
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></TabWidget>
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>

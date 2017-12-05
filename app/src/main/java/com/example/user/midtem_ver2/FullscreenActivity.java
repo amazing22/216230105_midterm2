@@ -109,7 +109,7 @@ public class FullscreenActivity extends AppCompatActivity {
         findViewById(R.id.dummy_button).setOnTouchListener(mDelayHideTouchListener);
     }
     public void NextScene(View v){
-        Intent i = new Intent(this, MainActivity.class);  // 이것이 인텐트, 메시지 객체이다.
+        Intent i = new Intent(this, SecondTabbed.class);  // 이것이 인텐트, 메시지 객체이다.
         startActivity(i);
     }
 

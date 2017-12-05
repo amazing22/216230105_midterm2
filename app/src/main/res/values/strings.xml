@@ -17,4 +17,10 @@
     <string name="section_format">Hello World from section: %1$d</string>
     <string name="title_activity_main3">Main3Activity</string>
     <string name="title_activity_main4">Main4Activity</string>
+    <string name="title_activity_secondwork1">secondwork1</string>
+    <string name="title_activity_secondwork3_maps">Map</string>
+    <string name="title_activity_secondwork">secondwork</string>
+    <string name="title_activity_second_tab">SecondTab</string>
+    <string name="title_activity_tabbed2">TabbedActivity2</string>
+    <string name="title_activity_maps">Map</string>
 </resources>

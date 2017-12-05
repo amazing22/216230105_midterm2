@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffdfdf"
+    tools:context="com.example.user.midtem_ver2.SecondTabbed">
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/button15"
+        android:layout_below="@+id/textView8"
+        android:layout_marginTop="102dp"
+        android:layout_marginRight="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button2"
+        android:onClick="one"
+        android:text="첫번째 과제" />
+
+    <Button
+        android:id="@+id/button15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView8"
+        android:layout_below="@+id/button11"
+        android:layout_marginTop="83dp"
+        android:background="@drawable/button2"
+        android:onClick="two"
+        android:layout_marginRight="20dp"
+        android:text="두번째 과제"
+        tools:layout_editor_absoluteY="250dp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:textSize="25dp"
+        android:text="어떤 것을 선택하시겠습니까?"
+        android:textStyle="bold"/>
+</RelativeLayout>
+
